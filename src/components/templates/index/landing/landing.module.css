@@ -1,0 +1,208 @@
+.landingContainer {
+  position: relative;
+  background-color: #333;
+  background-image: url("../../../../../public/images/landingShape.png");
+  background-position: center;
+  background-size: cover; /* برای اطمینان از پوشش کامل تصویر */
+  min-height: 115vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.landingContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(at center center, #ffffff00 0%, #000000 100%);
+  opacity: 0.55;
+  z-index: 1; /* برای اطمینان از اینکه overlay زیر محتوا بماند */
+  pointer-events: none; /* جلوگیری از تاثیر بر روی تعاملات */
+}
+
+.landingContainer > * {
+  position: relative;
+  z-index: 2; /* محتوا بالای overlay قرار می‌گیرد */
+}
+
+.row {
+  align-items: center;
+}
+
+.rightSide {
+  text-align: center;
+}
+
+.title {
+  color: var(--white);
+  font-size: 10rem;
+  font-weight: 700;
+}
+
+.pizzaWord {
+  color: var(--main-color);
+}
+
+.orderBtn {
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+}
+
+.orderBtnLink {
+  color: var(--dark);
+  transition: all 0.2s;
+}
+
+.orderBtn:hover .orderBtnLink {
+  color: var(--white);
+}
+
+.leftSide {
+}
+
+.pizzaImage {
+  max-width: 90%;
+  height: auto;
+}
+
+.decorImage {
+  position: absolute;
+  z-index: 1; /* پشت محتوای اصلی */
+  pointer-events: none; /* جلوگیری از تأثیر تعاملات */
+  transition: transform 0.2s ease-out; /* انیمیشن حرکت */
+}
+
+.tomatoImage {
+  top: 4%;
+  left: 32%;
+  max-width: 45rem;
+  height: auto;
+}
+
+.panirImage {
+  top: 10%;
+  left: -7%;
+  max-width: 100rem;
+  height: auto;
+}
+
+.reyhoonImage {
+  top: 60%;
+  left: 40%;
+  max-width: 23rem;
+  height: auto;
+}
+
+.bargImage {
+  top: 15%;
+  right: -15%;
+  max-width: 40rem;
+  height: auto;
+}
+
+.gharchImage {
+  top: 20%;
+  left: -10%;
+  max-width: 40rem;
+  height: auto;
+}
+
+@media (max-width: 1300px) {
+  .tomatoImage {
+    top: 7%;
+    left: 30%;
+    max-width: 40rem;
+  }
+
+  .reyhoonImage {
+    top: 60%;
+    left: 38%;
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .panirImage {
+    top: 15%;
+    left: -18%;
+    max-width: 107rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 9rem;
+  }
+
+  .tomatoImage {
+    top: 10%;
+    left: 28%;
+    max-width: 37rem;
+  }
+
+  .gharchImage {
+    top: 20%;
+    left: -10%;
+    max-width: 35rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 1050px) {
+  .tomatoImage {
+    top: 15%;
+    left: 28%;
+    max-width: 33rem;
+  }
+  
+  .bargImage {
+    top: 15%;
+    right: -20%;
+    max-width: 40rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 8rem;
+  }
+
+  .tomatoImage {
+    top: 17%;
+    left: 28%;
+    max-width: 29rem;
+  }
+
+  .reyhoonImage {
+    top: 60%;
+    left: 35%;
+    max-width: 16rem;
+  }
+
+  .gharchImage {
+    top: 20%;
+    left: -10%;
+    max-width: 30rem;
+  }
+
+  .bargImage {
+    top: 15%;
+    right: -23%;
+    max-width: 40rem;
+  }
+
+}
+
+@media (max-width: 875px) {
+  .title {
+    font-size: 7rem;
+  }
+}

@@ -1,0 +1,83 @@
+.navbarContainer {
+  background-color: var(--white);
+  padding: 3rem 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoBox {
+
+}
+
+.logoImage {
+
+}
+
+.menuBox {
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  margin-bottom: 0;
+}
+
+.menuItem {
+}
+
+.menuLink {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.menuLink:hover {
+  color: var(--main-color);
+}
+
+.iconsBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconBox {
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  cursor: pointer;
+  position: relative;
+}
+
+.iconBox:hover {
+  border: 1px solid var(--main-color);
+  background-color: #eeac00;
+}
+
+.iconBox .wishlistCount,
+.iconBox .shoppingCount{
+  background-color: var(--main-color);
+  color: var(--dark);
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+}
+
+.icon {
+  color: var(--dark);
+}
