@@ -1,0 +1,83 @@
+.menusContainer{
+  margin-top: -1.2rem;
+  padding-bottom: 7rem;
+}
+
+.menu{
+  text-align: center;
+}
+
+.menuBtn{
+  background-color: var(--main-color);
+  transition: all .3s;
+  border: none;
+  outline: none;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  position: relative;
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  z-index: 5;
+}
+
+.menuBtn:hover{
+  background-color: #eeac00;
+  color: var(--white);
+}
+
+.row{
+  justify-content: space-between;
+}
+
+.col{
+  padding: 0;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.column-lg-8 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+.menuLink{
+  color: var(--dark);
+  transition: all .3s;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.menuBtn:hover .menuLink{
+  color: var(--white);
+}
+
+.menuItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBox{
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+}
+
+.menuItem:hover .imageBox{
+  transform: translateY(-5px);
+  box-shadow: rgba(255, 192, 34, 0.45) 0px 25px 20px -20px;
+}
+
+.title{
+  color: var(--dark);
+  transition: all .3s;
+  font-weight: 700;
+}
+
+.menuItem:hover .title{
+  color: var(--main-color);
+}
+
