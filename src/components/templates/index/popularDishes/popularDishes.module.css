@@ -1,0 +1,81 @@
+.PopularDishesContainer{
+  padding: 10rem 0 7rem;
+  position: relative;
+}
+
+.shape{
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+}
+
+.shape1{
+  left: 1%;
+  top: 10%;
+}
+
+.shape2{
+  top: 80%;
+  left: 42%;
+}
+
+.shape3{
+  right: 0;
+  bottom: 20%;
+}
+
+.title{
+  font-size: 4.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tabs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem 0 4rem;
+}
+
+.tab{
+  outline: none;
+  color: var(--dark);
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.tab:hover{
+  background-color: var(--main-color);
+}
+
+.tab.active{
+  background-color: var(--main-color);
+}
+
+.popularItems{
+
+}
+
+.menuBtnBox{
+  text-align: center;
+}
+
+.menuBtn{
+  background-color: #dddddd;
+  color: var(--dark);
+  transition: all .3s ease;
+  padding: 1.5rem 4rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  display: inline-block;
+}
+
+.menuBtn:hover{
+  background-color: #eeac00;
+  color: var(--white);
+}
