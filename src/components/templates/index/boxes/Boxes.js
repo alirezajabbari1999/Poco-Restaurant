@@ -30,6 +30,7 @@ export default function Boxes() {
                 shape={bannerShape1}
                 backgroundImage={bannerBg}
                 title="طعم های دیگر"
+                titleColor="#fff"
                 description="SAVE ROOM, WE MADE SALATS"
                 price="$12.90"
                 priceColor="var(--main-color)"

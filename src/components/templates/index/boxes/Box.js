@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default function Box({
   title,
+  titleColor,
   description,
   descColor,
   image,
@@ -31,7 +32,12 @@ export default function Box({
       </div>
 
       <div className={styles.leftSide}>
-        <p className={styles.title}>{title}</p>
+        <p
+          className={styles.title}
+          style={titleColor ? { color: titleColor } : {}}
+        >
+          {title}
+        </p>
         {description && (
           <p
             className={styles.desc}

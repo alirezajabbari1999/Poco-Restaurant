@@ -40,6 +40,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Norican;
+  src: url("/fonts/Norican-Regular.ttf");
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/Gilroy-Bold.ttf");
+}
+
 html {
   font-size: 62.5%;
 }

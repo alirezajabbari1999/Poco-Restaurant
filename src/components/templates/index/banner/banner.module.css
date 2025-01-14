@@ -1,0 +1,226 @@
+.bannerContainer {
+  background-image: url("/images/bigBannerBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.firstRow {
+  font-family: Norican, serif;
+  font-size: 1.8rem;
+}
+
+.secondRow {
+  color: var(--main-color);
+  z-index: 6;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.thirdRow {
+  font-family: Gilroy, serif;
+  font-size: 3.8rem;
+  line-height: 0.01;
+}
+
+.shape {
+  position: absolute;
+  z-index: 6;
+  transition: transform 0.1s ease-out; /* حرکت نرم‌تر */
+}
+
+.shape1Box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -13%;
+  left: 19%;
+  z-index: 6;
+}
+
+.shape1 {
+  top: -18%;
+  left: 16%;
+}
+
+.shape2 {
+  top: -93%;
+  right: 18%;
+}
+
+.shape3 {
+  top: -35%;
+  right: 14%;
+}
+
+
+.banner {
+}
+
+.pizzaImage {
+  position: absolute;
+  width: 100rem;
+  height: auto;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.textBox {
+  z-index: 6;
+  position: relative;
+  display: inline-block;
+  margin-top: 10rem;
+}
+
+.miniDesc {
+  font-family: Norican, serif;
+  color: var(--white);
+  font-size: 5rem;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.title {
+  color: #ffcd02;
+  font-size: 15rem;
+  font-weight: 600;
+  font-family: Gilroy;
+  margin-top: -3.5rem;
+}
+
+.shopBtn {
+  background-color: var(--white);
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.shopLink {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 1.7rem;
+  transition: all 0.3s ease;
+}
+
+.shopBtn:hover {
+  background-color: var(--main-color);
+}
+
+.shopBtn:hover .shopLink {
+  color: var(--white);
+}
+
+@media (max-width: 1400px){
+  .bannerContainer {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 14rem;
+  }
+
+  .shape1Box{
+    top: -27%;
+    left: 14%;
+  }
+  
+  .shape1 {
+    top: -32%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bannerContainer {
+    height: 45vh;
+  }
+
+  .shape2 {
+    top: -88%;
+    right: 25%;
+  }
+  
+  .shape3 {
+    top: -33%;
+    right: 18%;
+  }
+
+  .textBox {
+    margin-top: 15rem;
+    margin-right: 13rem;
+  }
+
+  .miniDesc {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 8rem;
+    margin-top: -2rem;
+  }
+
+  .pizzaImage {
+    width: 53rem;
+    height: auto;
+    bottom: 0%;
+    left: 35%;
+  }
+
+  .shape1Box{
+    top: -27%;
+    left: 8%;
+  }
+  
+  .shape1 {
+    top: -32%;
+    left: 3%;
+  }
+}
+
+
+@media (max-width: 991px){
+  .shape1Box{
+    top: -117%;
+    left: 8%;
+  }
+  
+  .shape1 {
+    top: -122%;
+    left: 3%;
+  }
+
+  .shape2 {
+    top: -253%;
+    right: 25%;
+  }
+  
+  .shape3 {
+    top: -117%;
+    left: 18%;
+  }
+
+}
+
+@media (max-width: 800px){
+  .shape1Box{
+    left: 9%;
+  }
+}
+@media (max-width: 768px){
+  .shape1Box{
+    
+  }
+}
+
