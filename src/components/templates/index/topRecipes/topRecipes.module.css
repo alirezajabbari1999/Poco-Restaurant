@@ -1,0 +1,88 @@
+.TopRecipesContainer{
+  padding: 10rem 0;
+}
+
+.imageBox{
+  position: relative;
+  text-align: center;
+}
+
+.imageTextBox{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
+.imageDesc{
+  color: var(--white);
+  font-family: Norican, serif;
+  font-size: 4.5rem;
+}
+
+.imageTitle{
+  color: #f00000;
+  font-family: Gilroy, serif;
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: -1rem;
+}
+
+.callText{
+  color: var(--white);
+  font-family: Gilroy, serif;
+  font-weight: 600;
+}
+
+.number{
+  color: #f00000;
+  font-family: Gilroy, serif;
+}
+
+.image{
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.linkIconBox{
+  background-color: #00a149;
+  padding: .1rem .6rem;
+  border-radius: .8rem;
+}
+
+.linkIcon{
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.link:hover .linkIcon{
+  color: var(--main-color);
+}
+
+.linkText{
+  color: var(--dark);
+  font-size: 1.4rem;
+}
+
+.link:hover .linkText{
+  color: var(--main-color);
+}

@@ -1,0 +1,83 @@
+.TopRecipesItemCountainer{
+  padding: 1rem;
+  border: 1px solid var(--border);
+  margin: 1rem 0;
+  border-radius: 3rem;
+}
+
+.TopRecipesItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff8e8;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.rightSide{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.textBox{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: .5rem;
+}
+
+.title{
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.title:hover{
+  color: var(--main-color);
+}
+
+.category{
+  font-size: 1.4rem;
+  color: #808080;
+}
+
+.category:hover{
+  color: var(--main-color);
+}
+
+.price{
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.shopBox{
+  align-self: flex-end;
+  background-color: var(--main-color);
+  padding: .5rem 1rem;
+  margin: 0 1rem 1rem 0;
+  border-radius: 1.4rem;
+  cursor: pointer;
+}
+
+.shopBox:hover{
+  background-color: #eeac00;
+}
+
+.shopIcon{
+
+}
+
+.shopBox:hover .shopIcon{
+  color: var(--white);
+}
+
+.leftSide{
+
+}
+
+.image{
+  width: 100%;
+  height: auto;
+}
