@@ -1,0 +1,45 @@
+.comment{
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 4rem;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.starsBox{
+
+}
+
+.starIcon{
+  color: #ffcc00;
+}
+
+.userInfoBox{
+  display: flex;
+  gap: 1rem;
+}
+
+.userName{
+  font-weight: 700;
+}
+
+.imageBox{
+
+}
+
+.image{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.commentText{
+  margin-top: 3rem;
+}
+
+.text{
+  color: #808080;
+}

@@ -5,6 +5,7 @@ import Boxes from "../components/templates/index/boxes/Boxes";
 import PopularDishes from "../components/templates/index/popularDishes/PopularDishes";
 import Banner from "../components/templates/index/banner/Banner";
 import TopRecipes from "../components/templates/index/topRecipes/TopRecipes";
+import Comments from "../components/templates/index/comments/Comments";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <PopularDishes />
       <Banner />
       <TopRecipes />
+      <Comments />
     </>
   );
 }

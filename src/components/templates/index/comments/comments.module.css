@@ -1,0 +1,39 @@
+.commentsContainer {
+  background-color: #f7f2e2;
+  padding: 10rem 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.sliderBox {
+  position: relative;
+}
+
+.sliderBox :global(.swiper-pagination) {
+  margin-top: 3rem;
+  text-align: center;
+  z-index: 10; 
+  position: relative;
+}
+
+.sliderBox :global(.swiper-pagination-bullet) {
+  background-color: #ffcc00;
+  opacity: 0.5;
+  width: .9rem;
+  height: .7rem;
+  transition: all 0.3s ease;
+}
+
+.sliderBox :global(.swiper-pagination-bullet-active) {
+  background-color: #ffcc00;
+  opacity: 1;
+  width: 1.6rem;
+  height: .7rem;
+  border-radius: .3rem;
+}
