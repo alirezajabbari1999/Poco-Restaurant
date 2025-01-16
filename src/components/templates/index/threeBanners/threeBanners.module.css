@@ -1,0 +1,105 @@
+.threeBannersContainer {
+}
+
+.row {
+  margin-left: 0;
+}
+
+.col {
+  padding: 0;
+}
+
+.threeBannersItem {
+  position: relative;
+  background-color: #ffc900;
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0 0;
+}
+
+.contentBox {
+  text-align: left;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  z-index: 10;
+}
+
+.saladContainer {
+  background-color: #db731e;
+}
+
+.bergerContainer {
+  background-color: #ffc900;
+}
+
+.chickenContainer {
+  background-color: #00a850;
+}
+
+.title {
+  font-size: 11rem;
+  font-weight: 700;
+  padding-top: -3rem;
+}
+
+.saladTitle {
+  color: #ffc900;
+}
+
+.bergerTitle {
+  color: #cd4414;
+}
+
+.chickenTitle {
+  color: #cd4414;
+}
+
+.header {
+  font-family: Norican, serif;
+  color: var(--white);
+  font-size: 4rem;
+  margin-bottom: -2.5rem !important;
+}
+
+.desc {
+  color: var(--white);
+  font-size: 2rem;
+  margin-top: -3rem !important;
+  margin-bottom: 9rem !important;
+}
+
+.orderBtn {
+  color: var(--dark);
+  background-color: var(--white);
+  padding: 1.2rem 4rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.orderBtn:hover {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+.imageBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 60rem;
+  height: auto;
+  margin-right: -50%;
+  margin-bottom: -25%;
+}
+
+@media (max-width: 991px) {
+  .saladImage {
+    width: 50%;
+    margin-right: 0%;
+    margin-bottom: 0;
+  }
+}

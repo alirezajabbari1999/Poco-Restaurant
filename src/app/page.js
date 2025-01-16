@@ -6,6 +6,7 @@ import PopularDishes from "../components/templates/index/popularDishes/PopularDi
 import Banner from "../components/templates/index/banner/Banner";
 import TopRecipes from "../components/templates/index/topRecipes/TopRecipes";
 import Comments from "../components/templates/index/comments/Comments";
+import ThreeBanners from "../components/templates/index/threeBanners/ThreeBanners";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Banner />
       <TopRecipes />
       <Comments />
+      <ThreeBanners />
     </>
   );
 }
