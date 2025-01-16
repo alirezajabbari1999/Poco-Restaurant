@@ -94,28 +94,28 @@ export default function PopularDishes() {
 
         <div className={styles.popularItems}>
           <Row className={styles.row}>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
-            <Col lg={3}>
+            <Col lg={3} md={4} xs={6}>
               <PopularItem />
             </Col>
           </Row>

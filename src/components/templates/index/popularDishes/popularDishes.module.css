@@ -1,36 +1,36 @@
-.PopularDishesContainer{
+.PopularDishesContainer {
   padding: 10rem 0 7rem;
   position: relative;
 }
 
-.shape{
+.shape {
   position: absolute;
   z-index: 1;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.shape1{
+.shape1 {
   left: 1%;
   top: 10%;
 }
 
-.shape2{
+.shape2 {
   top: 80%;
   left: 42%;
 }
 
-.shape3{
+.shape3 {
   right: 0;
   bottom: 20%;
 }
 
-.title{
+.title {
   font-size: 4.2rem;
   font-weight: 700;
   text-align: center;
 }
 
-.tabs{
+.tabs {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +38,7 @@
   margin: 3rem 0 4rem;
 }
 
-.tab{
+.tab {
   outline: none;
   color: var(--dark);
   background-color: var(--white);
@@ -46,36 +46,85 @@
   padding: 1.5rem 3rem;
   border-radius: 2rem;
   font-weight: 600;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.tab:hover{
+.tab:hover {
   background-color: var(--main-color);
 }
 
-.tab.active{
+.tab.active {
   background-color: var(--main-color);
 }
 
-.popularItems{
-
+.popularItems {
 }
 
-.menuBtnBox{
+.menuBtnBox {
   text-align: center;
 }
 
-.menuBtn{
+.menuBtn {
   background-color: #dddddd;
   color: var(--dark);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   padding: 1.5rem 4rem;
   border-radius: 1rem;
   margin-top: 3rem;
   display: inline-block;
 }
 
-.menuBtn:hover{
+.menuBtn:hover {
   background-color: #eeac00;
   color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .tab {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    gap: 0.7rem;
+    margin: 3rem 0 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  @media (max-width: 500px) {
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* شبکه با 6 ستون مساوی */
+      grid-template-rows: auto auto; /* دو ردیف */
+      gap: 0.5rem; /* فاصله بین تب‌ها */
+    }
+  
+    .tabs button:nth-child(1) {
+      grid-column: span 2; /* ستون‌های 1 و 2 */
+      grid-row: 1; /* ردیف اول */
+    }
+  
+    .tabs button:nth-child(2) {
+      grid-column: 3 / span 2; /* ستون‌های 3 و 4 */
+      grid-row: 1; /* ردیف اول */
+    }
+  
+    .tabs button:nth-child(3) {
+      grid-column: 5 / span 2; /* ستون‌های 5 و 6 */
+      grid-row: 1; /* ردیف اول */
+    }
+  
+    .tabs button:nth-child(4) {
+      grid-column: 1 / span 3; /* از ستون 2 تا 4.5 */
+      grid-row: 2; /* ردیف دوم */
+    }
+  
+    .tabs button:nth-child(5) {
+      grid-column: 4 / span 5; /* از ستون 4 تا 5 */
+      grid-row: 2; /* ردیف دوم */
+    }
+  }
+  
 }
