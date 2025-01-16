@@ -8,6 +8,7 @@ import TopRecipes from "../components/templates/index/topRecipes/TopRecipes";
 import Comments from "../components/templates/index/comments/Comments";
 import ThreeBanners from "../components/templates/index/threeBanners/ThreeBanners";
 import Blogs from "../components/templates/index/blogs/Blogs";
+import Footer from "../components/modules/footer/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Comments />
       <ThreeBanners />
       <Blogs />
+      <Footer />
     </>
   );
 }

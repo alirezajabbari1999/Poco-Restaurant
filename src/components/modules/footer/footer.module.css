@@ -1,0 +1,90 @@
+.footerContainer {
+  background-color: #181818;
+  padding: 10rem 0;
+}
+
+.logoBox {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.logoBox {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.logo {
+  margin: 0 3rem;
+}
+
+.logoLine {
+  flex: 1; 
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.167);
+}
+
+.contentBox {
+
+}
+
+.col {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.colHeader {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.desc {
+  color: #b0b0b0;
+}
+
+.clock {
+  color: var(--white);
+}
+
+.phoneNumber {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.inputBox {
+  background-color: #1e1d23;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribeBtn {
+  background-color: var(--main-color);
+  color: var(--dark);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  direction: ltr;
+  padding: 0.3rem;
+  background-color: transparent;
+  color: #ffffffc4;
+}
+
+.input::placeholder {
+  color: #ffffffc4;
+}
