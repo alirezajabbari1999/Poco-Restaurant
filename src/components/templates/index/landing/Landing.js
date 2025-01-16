@@ -88,7 +88,7 @@ export default function Landing() {
       />
 
       <Row className={styles.row}>
-        <Col md={6} sm={12}>
+        <Col lg={6} sm={12}>
           <div className={styles.rightSide}>
             <h1 className={styles.title}>
               اینجا هر <span className={styles.pizzaWord}>پیتزا</span> داستانی
@@ -102,7 +102,7 @@ export default function Landing() {
           </div>
         </Col>
 
-        <Col md={6} sm={12}>
+        <Col lg={6} sm={12}>
           <div className={styles.leftSide}>
             <Image
               src={pizzaImage}

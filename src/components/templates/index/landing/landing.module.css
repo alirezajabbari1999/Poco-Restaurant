@@ -41,10 +41,16 @@
   color: var(--white);
   font-size: 10rem;
   font-weight: 700;
+  text-shadow: 
+    2px 2px 0 var(--main-color),   /* سایه بالا-راست */
+    -2px 2px 0 var(--main-color),  /* سایه بالا-چپ */
+    2px -2px 0 var(--main-color),  /* سایه پایین-راست */
+    -2px -2px 0 var(--main-color); /* سایه پایین-چپ */
 }
 
 .pizzaWord {
   color: var(--main-color);
+text-shadow: none;
 }
 
 .orderBtn {
@@ -197,6 +203,11 @@
     top: 15%;
     right: -23%;
     max-width: 40rem;
+  }
+
+  .leftSide {
+    text-align: center;
+    margin-top: 5rem;
   }
 
 }

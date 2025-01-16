@@ -11,10 +11,10 @@ import bannerBg from "@/public/images/bannerBg.jpg";
 export default function Boxes() {
   return (
     <div className={styles.boxesContainer}>
-      <Container>
+      <Container className={styles.container}>
         <div className={styles.boxes}>
           <Row className={styles.row}>
-            <Col xl={4} lg={6} md={12}>
+            <Col lg={4} md={12} sm={12}>
               <Box
                 image={bannerImage1}
                 shape={bannerShape1}
@@ -24,7 +24,7 @@ export default function Boxes() {
               />
             </Col>
 
-            <Col xl={4} lg={6} md={12}>
+            <Col lg={4} md={12} sm={12}>
               <Box
                 image={bannerImage2}
                 shape={bannerShape1}
@@ -38,7 +38,7 @@ export default function Boxes() {
               />
             </Col>
 
-            <Col xl={4} lg={6} md={12}>
+            <Col lg={4} md={12} sm={12}>
               <Box
                 image={bannerImage3}
                 shape={bannerShape2}

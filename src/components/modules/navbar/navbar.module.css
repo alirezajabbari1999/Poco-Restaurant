@@ -91,3 +91,10 @@
 .icon {
   color: var(--dark);
 }
+
+
+@media (max-width: 991px) {
+  .navbarContainer {
+    display: none;
+  }
+}
