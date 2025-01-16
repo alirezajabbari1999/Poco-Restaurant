@@ -96,10 +96,26 @@
   margin-bottom: -25%;
 }
 
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 9rem;
+    font-weight: 700;
+    padding-top: -3rem;
+  }
+}
+
 @media (max-width: 991px) {
   .saladImage {
     width: 50%;
     margin-right: 0%;
     margin-bottom: 0;
   }
+}
+
+@media (max-width: 768px) {
+  .chickenContainer {
+    margin-bottom: 7rem;
+  }
+  
 }
