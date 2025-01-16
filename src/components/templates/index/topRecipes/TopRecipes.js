@@ -9,9 +9,9 @@ import TopRecipesItem from "./TopRecipesItem";
 export default function TopRecipes() {
   return (
     <div className={styles.TopRecipesContainer}>
-      <Container>
+      <Container className={styles.container}>
         <Row>
-          <Col lg={4} sm={12}>
+          <Col lg={4} sm={12} className="order-2 order-lg-1">
             <div className={styles.imageBox}>
               <div className={styles.imageTextBox}>
                 <p className={styles.imageDesc}>Super Delicious</p>
@@ -27,7 +27,7 @@ export default function TopRecipes() {
             </div>
           </Col>
 
-          <Col lg={8} sm={12}>
+          <Col lg={8} sm={12} className="order-1 order-lg-2">
             <div className={styles.header}>
               <Link href="/" className={styles.link}>
                 <span className={styles.linkIconBox}>
@@ -40,22 +40,22 @@ export default function TopRecipes() {
 
             <div className={styles.itemsBox}>
               <Row>
-                <Col lg={6}>
+                <Col sm={6}>
                   <TopRecipesItem />
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <TopRecipesItem />
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <TopRecipesItem />
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <TopRecipesItem />
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <TopRecipesItem />
                 </Col>
-                <Col lg={6}>
+                <Col sm={6}>
                   <TopRecipesItem />
                 </Col>
               </Row>
