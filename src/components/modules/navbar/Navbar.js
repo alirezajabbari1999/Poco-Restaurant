@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
 import { Container } from "react-bootstrap";
 import Link from "next/link";
@@ -9,8 +11,27 @@ import { IoHeart } from "react-icons/io5";
 import { RiShoppingBasketFill } from "react-icons/ri";
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className={styles.navbarContainer}>
+    <div
+      className={`${styles.navbarContainer} ${
+        isScrolled ? styles.scrolled : ""
+      }`}
+    >
       <Container>
         <div className={styles.navbar}>
           <div className={styles.logoBox}>

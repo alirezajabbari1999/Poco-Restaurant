@@ -1,6 +1,16 @@
 .navbarContainer {
   background-color: var(--white);
   padding: 3rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbarContainer.scrolled {
+  background-color: #f5f5f5; /* رنگ خاکستری */
+  padding: 1rem 0; /* کاهش padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* سایه کم‌رنگ */
 }
 
 .navbar {
