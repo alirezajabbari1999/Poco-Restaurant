@@ -7,13 +7,13 @@ export default function Footer() {
   return (
     <div className={styles.footerContainer}>
       <Container>
-        <div className={styles.logoBox}>
+        <div className={styles.logoBox} data-aos="zoom-in">
           <span className={styles.logoLine}></span>
           <Image src={logo} alt="logo" className={styles.logo} />
           <span className={styles.logoLine}></span>
         </div>
 
-        <div className={styles.contentBox}>
+        <div className={styles.contentBox} data-aos="fade-up">
           <Row>
             <Col lg={3} md={6} sm={12}>
               <div className={styles.col}>

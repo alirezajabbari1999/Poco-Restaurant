@@ -23,6 +23,7 @@ export default function Box({
           ? { backgroundImage: `url(${backgroundImage.src})` }
           : {}
       }
+      data-aos="fade-up"
     >
       <div className={styles.rightSide}>
         <div className={styles.imageBox}>

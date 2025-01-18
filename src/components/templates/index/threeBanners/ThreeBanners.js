@@ -28,6 +28,7 @@ export default function ThreeBanners() {
                 src={threeBaneersSalad}
                 className={`${styles.image} ${styles.saladImage}`}
                 alt="banner image"
+                data-aos="fade-left"
               />
             </div>
           </div>
@@ -51,6 +52,7 @@ export default function ThreeBanners() {
                 src={threeBaneersBerger}
                 className={styles.image}
                 alt="banner image"
+                data-aos="fade-left"
               />
             </div>
           </div>
@@ -74,6 +76,7 @@ export default function ThreeBanners() {
                 src={threeBaneersChicken}
                 className={styles.image}
                 alt="banner image"
+                data-aos="fade-left"
               />
             </div>
           </div>

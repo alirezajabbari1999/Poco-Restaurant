@@ -11,8 +11,8 @@ export default function Comments() {
   return (
     <div className={styles.commentsContainer}>
       <Container>
-        <h2 className={styles.title}>آنچه مشتریان می‌گویند</h2>
-        <div className={styles.sliderBox}>
+        <h2 className={styles.title} data-aos="zoom-in">آنچه مشتریان می‌گویند</h2>
+        <div className={styles.sliderBox} data-aos="fade-up">
           <Swiper
             slidesPerView={3}
             spaceBetween={30}

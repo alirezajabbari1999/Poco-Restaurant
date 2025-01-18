@@ -1,7 +1,6 @@
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-
+import AOSInit from "@/utils/aos";
 
 export const metadata = {
   title: "رستوران پوکو",
@@ -12,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <AOSInit />
         {children}
       </body>
     </html>

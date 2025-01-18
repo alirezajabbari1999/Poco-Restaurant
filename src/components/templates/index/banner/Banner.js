@@ -43,10 +43,12 @@ export default function Banner() {
         alt="banner section shape image"
         className={`${styles.shape} ${styles.shape1}`}
         style={{ transform: `translateY(${scrollY * 0.1}px)` }}
+        data-aos="zoom-in"
       />
       <div
         className={styles.shape1Box}
         style={{ transform: `translateY(${scrollY * 0.1}px)` }}
+        data-aos="zoom-in"
       >
         <p className={styles.firstRow}>Get Up to</p>
         <p className={styles.secondRow}>50%</p>

@@ -88,13 +88,13 @@ export default function Landing() {
       />
 
       <Row className={styles.row}>
-        <Col lg={6} sm={12}>
-          <div className={styles.rightSide}>
-            <h1 className={styles.title}>
+        <Col lg={6} sm={12} >
+          <div className={styles.rightSide} data-aos="fade-left">
+            <h1 className={styles.title} data-aos="fade-left">
               اینجا هر <span className={styles.pizzaWord}>پیتزا</span> داستانی
               دارد!
             </h1>
-            <button className={styles.orderBtn}>
+            <button className={styles.orderBtn} data-aos="fade-up">
               <Link href="/" className={styles.orderBtnLink}>
                 اکنون سفارش دهید
               </Link>
@@ -103,7 +103,7 @@ export default function Landing() {
         </Col>
 
         <Col lg={6} sm={12}>
-          <div className={styles.leftSide}>
+          <div className={styles.leftSide} data-aos="zoom-in">
             <Image
               src={pizzaImage}
               alt="Pizza Image"

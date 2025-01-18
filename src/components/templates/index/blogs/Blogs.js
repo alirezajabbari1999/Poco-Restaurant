@@ -11,7 +11,7 @@ export default function Blogs() {
   return (
     <div className={styles.blogsContainer}>
       <Container>
-        <div className={styles.header}>
+        <div className={styles.header} data-aos="zoom-in">
           <Link href="/" className={styles.link}>
             <span className={styles.linkIconBox}>
               <FaAngleRight className={styles.linkIcon} />
@@ -21,7 +21,7 @@ export default function Blogs() {
           <h2 className={styles.title}>آخرین مقالات</h2>
         </div>
 
-        <div className={styles.blogsItem}>
+        <div className={styles.blogsItem} data-aos="fade-up">
           <Swiper
             spaceBetween={30}
             slidesPerView={3}

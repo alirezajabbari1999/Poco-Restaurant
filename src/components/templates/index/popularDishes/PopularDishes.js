@@ -47,9 +47,9 @@ export default function PopularDishes() {
       />
 
       <Container>
-        <h2 className={styles.title}>غذاهای محبوب</h2>
+        <h2 className={styles.title} data-aos="zoom-in">غذاهای محبوب</h2>
 
-        <div className={styles.tabs}>
+        <div className={styles.tabs} data-aos="zoom-in">
           <button
             className={`${styles.tab} ${
               activeTab === "همبرگر" ? styles.active : ""
@@ -94,28 +94,28 @@ export default function PopularDishes() {
 
         <div className={styles.popularItems}>
           <Row className={styles.row}>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
-            <Col lg={3} md={4} xs={6}>
+            <Col lg={3} md={4} xs={6} data-aos="fade-up">
               <PopularItem />
             </Col>
           </Row>

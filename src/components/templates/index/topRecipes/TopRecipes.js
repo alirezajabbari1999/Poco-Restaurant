@@ -11,7 +11,7 @@ export default function TopRecipes() {
     <div className={styles.TopRecipesContainer}>
       <Container className={styles.container}>
         <Row>
-          <Col lg={4} sm={12} className="order-2 order-lg-1">
+          <Col lg={4} sm={12} className="order-2 order-lg-1" data-aos="zoom-in">
             <div className={styles.imageBox}>
               <div className={styles.imageTextBox}>
                 <p className={styles.imageDesc}>Super Delicious</p>
@@ -28,7 +28,7 @@ export default function TopRecipes() {
           </Col>
 
           <Col lg={8} sm={12} className="order-1 order-lg-2">
-            <div className={styles.header}>
+            <div className={styles.header} data-aos="fade-up">
               <Link href="/" className={styles.link}>
                 <span className={styles.linkIconBox}>
                   <FaAngleRight className={styles.linkIcon} />
@@ -38,7 +38,7 @@ export default function TopRecipes() {
               <h2 className={styles.title}>غذاهای پیشنهادی</h2>
             </div>
 
-            <div className={styles.itemsBox}>
+            <div className={styles.itemsBox} data-aos="fade-right">
               <Row>
                 <Col sm={6}>
                   <TopRecipesItem />
