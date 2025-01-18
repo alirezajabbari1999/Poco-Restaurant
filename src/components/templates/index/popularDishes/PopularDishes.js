@@ -4,7 +4,7 @@ import styles from "./popularDishes.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
-import PopularItem from "./PopularItem";
+import Product from "@/src/components/modules/product/Product";
 import shape1 from "@/public/images/popularShape1.png";
 import shape2 from "@/public/images/popularShape2.png";
 import shape3 from "@/public/images/popularShape3.png";
@@ -95,28 +95,28 @@ export default function PopularDishes() {
         <div className={styles.popularItems}>
           <Row className={styles.row}>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
             <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <PopularItem />
+              <Product />
             </Col>
           </Row>
         </div>
