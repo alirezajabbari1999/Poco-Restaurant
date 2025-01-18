@@ -46,18 +46,13 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link href="/" className={styles.menuLink}>
+                <Link href="/menu" className={styles.menuLink}>
                   منو
                 </Link>
               </li>
               <li className={styles.menuItem}>
                 <Link href="/" className={styles.menuLink}>
                   درباره ما
-                </Link>
-              </li>
-              <li className={styles.menuItem}>
-                <Link href="/" className={styles.menuLink}>
-                  فروشگاه
                 </Link>
               </li>
               <li className={styles.menuItem}>
