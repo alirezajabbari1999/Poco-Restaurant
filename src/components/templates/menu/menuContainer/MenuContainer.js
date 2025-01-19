@@ -7,7 +7,7 @@ import MenuItems from "./MenuItems";
 
 export default function MenuContainer() {
   const [products, setProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("pizza");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:3000/api/product")

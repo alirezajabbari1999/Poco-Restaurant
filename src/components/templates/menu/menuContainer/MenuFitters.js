@@ -11,6 +11,7 @@ import { PiCoffeeLight } from "react-icons/pi";
 
 export default function MenuFitters({ setSelectedCategory }) {
   const [price, setPrice] = useState(0);
+  const [categoryActive, setCategoryActive] = useState("");
 
   const handleRangeChange = (e) => {
     const value = e.target.value;
@@ -46,13 +47,22 @@ export default function MenuFitters({ setSelectedCategory }) {
               <ul className={styles.categoriesList}>
                 <li
                   className={styles.categoriesItem}
-                  onClick={() => handleCategoryClick("burger")}
+                  onClick={() => {
+                    handleCategoryClick("burger");
+                    setCategoryActive("burger");
+                  }}
                 >
                   <div className={styles.categorieItemCountBox}>
                     <span className={styles.categorieCount}>(9)</span>
                   </div>
 
-                  <div className={styles.categorieNameBox}>
+                  <div
+                    className={styles.categorieNameBox}
+                    style={{
+                      color:
+                        categoryActive === "burger" ? "var(--main-color)" : "",
+                    }}
+                  >
                     <p className={styles.categorieName}>همبرگر</p>
                     <PiHamburgerLight className={styles.categorieIcon} />
                   </div>
@@ -60,48 +70,67 @@ export default function MenuFitters({ setSelectedCategory }) {
 
                 <li
                   className={styles.categoriesItem}
-                  onClick={() => handleCategoryClick("pizza")}
+                  onClick={() => {
+                    handleCategoryClick("pizza");
+                    setCategoryActive("pizza");
+                  }}
                 >
                   <div className={styles.categorieItemCountBox}>
                     <span className={styles.categorieCount}>(9)</span>
                   </div>
 
-                  <div className={styles.categorieNameBox}>
+                  <div
+                    className={styles.categorieNameBox}
+                    style={{
+                      color:
+                        categoryActive === "pizza" ? "var(--main-color)" : "",
+                    }}
+                  >
                     <p className={styles.categorieName}>پیتزا</p>
                     <CiPizza className={styles.categorieIcon} />
                   </div>
                 </li>
-                {/* <li className={styles.categoriesItem} onClick={()=>handleCategoryClick("pasta")}>
-                  <div className={styles.categorieItemCountBox}>
-                    <span className={styles.categorieCount}>(20)</span>
-                  </div>
-
-                  <div className={styles.categorieNameBox}>
-                    <p className={styles.categorieName}>پاستا</p>
-                    <BiBowlRice className={styles.categorieIcon} />
-                  </div>
-                </li> */}
-                <li
+                {/* <li
                   className={styles.categoriesItem}
-                  onClick={() => handleCategoryClick("salad")}
+                  onClick={() => {
+                    handleCategoryClick("salad");
+                    setCategoryActive("salad");
+                  }}
                 >
                   <div className={styles.categorieItemCountBox}>
                     <span className={styles.categorieCount}>(5)</span>
                   </div>
 
-                  <div className={styles.categorieNameBox}>
+                  <div
+                    className={styles.categorieNameBox}
+                    style={{
+                      color:
+                        categoryActive === "salad" ? "var(--main-color)" : "",
+                    }}
+                  >
                     <p className={styles.categorieName}>سالاد</p>
                     <LuSalad className={styles.categorieIcon} />
                   </div>
-                </li>
-                <li className={styles.categoriesItem}>
+                </li> */}
+                <li
+                  className={styles.categoriesItem}
+                  onClick={() => {
+                    handleCategoryClick("cold-Drink");
+                    setCategoryActive("cold-Drink");
+                  }}
+                >
                   <div className={styles.categorieItemCountBox}>
                     <span className={styles.categorieCount}>(6)</span>
                   </div>
 
                   <div
                     className={styles.categorieNameBox}
-                    onClick={() => handleCategoryClick("cold-drink")}
+                    style={{
+                      color:
+                        categoryActive === "cold-Drink"
+                          ? "var(--main-color)"
+                          : "",
+                    }}
                   >
                     <p className={styles.categorieName}>نوشیدنی سرد</p>
                     <BiDrink className={styles.categorieIcon} />
@@ -109,13 +138,24 @@ export default function MenuFitters({ setSelectedCategory }) {
                 </li>
                 <li
                   className={styles.categoriesItem}
-                  onClick={() => handleCategoryClick("hot-drink")}
+                  onClick={() => {
+                    handleCategoryClick("hot-Drink");
+                    setCategoryActive("hot-Drink");
+                  }}
                 >
                   <div className={styles.categorieItemCountBox}>
                     <span className={styles.categorieCount}>(14)</span>
                   </div>
 
-                  <div className={styles.categorieNameBox}>
+                  <div
+                    className={styles.categorieNameBox}
+                    style={{
+                      color:
+                        categoryActive === "hot-Drink"
+                          ? "var(--main-color)"
+                          : "",
+                    }}
+                  >
                     <p className={styles.categorieName}>نوشیدنی گرم</p>
                     <PiCoffeeLight className={styles.categorieIcon} />
                   </div>

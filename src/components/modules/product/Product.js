@@ -1,7 +1,6 @@
 import styles from "./product.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import img1 from "@/public/images/popular.png";
 import { AiOutlineStar } from "react-icons/ai";
 import { AiFillStar } from "react-icons/ai";
 import { RiShoppingBasketFill } from "react-icons/ri";

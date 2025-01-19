@@ -12,6 +12,7 @@ import shape3 from "@/public/images/popularShape3.png";
 export default function PopularDishes() {
   const [activeTab, setActiveTab] = useState("همبرگر");
   const [scrollY, setScrollY] = useState(0);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +23,12 @@ export default function PopularDishes() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/product")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
   }, []);
 
   return (
@@ -47,7 +54,9 @@ export default function PopularDishes() {
       />
 
       <Container>
-        <h2 className={styles.title} data-aos="zoom-in">غذاهای محبوب</h2>
+        <h2 className={styles.title} data-aos="zoom-in">
+          غذاهای محبوب
+        </h2>
 
         <div className={styles.tabs} data-aos="zoom-in">
           <button
@@ -94,30 +103,11 @@ export default function PopularDishes() {
 
         <div className={styles.popularItems}>
           <Row className={styles.row}>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
-            <Col lg={3} md={4} xs={6} data-aos="fade-up">
-              <Product />
-            </Col>
+            {products.map((product, index) => (
+              <Col lg={3} md={4} xs={6} data-aos="fade-up" key={index + 1}>
+                <Product {...product} />
+              </Col>
+            ))}
           </Row>
         </div>
 

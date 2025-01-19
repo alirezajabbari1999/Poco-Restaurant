@@ -9,8 +9,6 @@ export default function MenuItems({ products, selectedCategory }) {
     ? products.filter((product) => product.category === selectedCategory)
     : products;
 
-  // console.log("Products =>",products)
-
   return (
     <div className={styles.menuItemsContainer}>
       <div className={styles.header}>
